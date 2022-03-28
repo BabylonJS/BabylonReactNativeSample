@@ -41,7 +41,7 @@ When building for iOS it will also be required to retrieve the pods for the proj
 
 ```
 cd ios
-pod update
+pod install
 cd ..
 ```
 
