@@ -11,7 +11,13 @@ This sample repo is intended to help users getting started using Babylon React N
       - [cocoapods](https://cocoapods.org/)
 
 
-## 1. Download 
+## 1. Setup React native development environment
+
+Follow the instructions on React Native's documentation for setting up your development environment. Be sure to select "React Native CLI quickstart" instead of "Expo CLI quickstart" since we currently do not support the usage of Expo. 
+
+- [React Native Environment Setup](https://reactnative.dev/docs/environment-setup)
+
+## 2. Download 
 
 You can download source code archives from [GitHub](https://github.com/SergioRZMasson/BabylonReactNative-GetStarted) or use ```git``` to clone the repository.
 
@@ -20,7 +26,7 @@ You can download source code archives from [GitHub](https://github.com/SergioRZM
 Cloning into 'BabylonReactNative-ReactNative0.65-Bugbash'...
 ```
 
-## 2. Project setup
+## 3. Project setup
 
 From your projects folder restore the npm packages by running:
 
@@ -45,7 +51,7 @@ In order to use Babylon React Native with the Android Emulator it is required th
 
 
 
-## 3. Try it out
+## 4. Try it out
 
 From your projects folder you can now run the following commands to launch your project:
 
@@ -57,7 +63,7 @@ npm run android
 If you want to run the application using your own devices please follow the [React Native Run on Device](https://reactnative.dev/docs/running-on-device) documentation.
 
 
-## 4. Add you code
+## 5. Add you code
 
 Once the project is running, you should be able to open App.tsx using your favorite code editor (we recommend using [vscode](https://code.visualstudio.com/)). Under ```EngineScreen.useEffect``` you are able to setup you Babylon scene the same way you do when using the [BabylonJS Playground](https://www.babylonjs-playground.com/)
 
