@@ -59,7 +59,7 @@ If you want to run the application using your own devices please follow the [Rea
 
 ## 4. Add you code
 
-Once the project is running, you should be able to open App.tsx using your favorite code editor (we recoment using [vscode](https://code.visualstudio.com/)). Under ```EngineScreen.useEffect``` you are able to setup you Babylon scene the same way you do when using the [BabylonJS Playground](https://www.babylonjs-playground.com/)
+Once the project is running, you should be able to open App.tsx using your favorite code editor (we recommend using [vscode](https://code.visualstudio.com/)). Under ```EngineScreen.useEffect``` you are able to setup you Babylon scene the same way you do when using the [BabylonJS Playground](https://www.babylonjs-playground.com/)
 
 ## More information
 
