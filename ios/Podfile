@@ -3,7 +3,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '12.0'
 
-target 'BabylonReactNativeBugBash' do
+target 'BabylonReactNativeSample' do
   config = use_native_modules!
 
   use_react_native!(
@@ -12,7 +12,7 @@ target 'BabylonReactNativeBugBash' do
     :hermes_enabled => false
   )
 
-  target 'BabylonReactNativeBugBashTests' do
+  target 'BabylonReactNativeSampleTests' do
     inherit! :complete
     # Pods for testing
   end
