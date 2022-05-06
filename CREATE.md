@@ -9,20 +9,20 @@ The following steps will configure your project to use Babylon React Native.
 Setup a new react native project (babylon react native currently only supports react version 0.64 and 0.65).
 
 ```
-react-native init YOUR_PROJECT_NAME --version 0.64
+react-native init YOUR_PROJECT_NAME --version 0.65
 cd YOUR_PROJECT_NAME
 ```
 
 Install babylon and babylon react native packages:
 
 ```
-npm i @babylonjs/react-native@0.64.0-alpha.48 @babylonjs/core@5.0.0-rc.1
+npm i @babylonjs/react-native @babylonjs/react-native-iosandroid-0-65 @babylonjs/core
 ```
 
 (Optional) If your application will load 3D files (such as glb), you will also need to install @babylonjs/loaders with the version matching @babylonjs/core:
 
 ```
-npm i @babylonjs/loaders@5.0.0-rc.1
+npm i @babylonjs/loaders
 ```
 
 ## Cocoapods configuration (iOS Only) 
