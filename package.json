@@ -10,10 +10,10 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@babylonjs/core": "^5.0.0",
-    "@babylonjs/loaders": "^5.0.0",
-    "@babylonjs/react-native": "^1.0.1",
-    "@babylonjs/react-native-iosandroid-0-65": "^1.0.1",
+    "@babylonjs/core": "^5.10.0",
+    "@babylonjs/loaders": "^5.10.0",
+    "@babylonjs/react-native": "^1.2.0",
+    "@babylonjs/react-native-iosandroid-0-65": "^1.2.0",
     "react": "17.0.2",
     "react-native": "0.65.2"
   },
