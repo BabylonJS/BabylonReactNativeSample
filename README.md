@@ -52,6 +52,7 @@ npm run ios
 ```
 or
 ```
+chmod 755 android/gradlew
 npm run android
 ```
 
