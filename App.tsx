@@ -33,8 +33,8 @@ const EngineScreen: FunctionComponent<ViewProps> = (props: ViewProps) => {
             disableTeleportation: true,
           });
           const session = await xr.baseExperience.enterXRAsync(
-            'immersive-ar',
-            'unbounded',
+            "immersive-ar",
+            "unbounded",
             xr.renderTarget,
           );
           setXrSession(session);
@@ -56,8 +56,7 @@ const EngineScreen: FunctionComponent<ViewProps> = (props: ViewProps) => {
 
   useEffect(() => {
     if (engine) {
-      const url =
-        'https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/BoxAnimated/glTF/BoxAnimated.gltf';
+      const url = "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/BoxAnimated/glTF/BoxAnimated.gltf";
       SceneLoader.LoadAsync(url, undefined, engine).then(scene => {
         setScene(scene);
         scene.createDefaultCameraOrLight(true, undefined, true);
@@ -72,7 +71,7 @@ const EngineScreen: FunctionComponent<ViewProps> = (props: ViewProps) => {
     <>
       <View style={props.style}>
         <Button
-          title={xrSession ? 'Stop XR' : 'Start XR'}
+          title={xrSession ? "Stop XR" : "Start XR"}
           onPress={onToggleXr}
         />
         <View style={{ flex: 1 }}>
