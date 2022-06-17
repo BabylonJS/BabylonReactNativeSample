@@ -5,19 +5,18 @@
  * @format
  */
 
-import React, {
-  useState,
-  FunctionComponent,
-  useEffect,
-  useCallback,
-} from 'react';
-import {Button, SafeAreaView, StatusBar, View, ViewProps} from 'react-native';
-import {EngineView, useEngine} from '@babylonjs/react-native';
-import {SceneLoader} from '@babylonjs/core/Loading/sceneLoader';
-import {Camera} from '@babylonjs/core/Cameras/camera';
-import {ArcRotateCamera} from '@babylonjs/core/Cameras/arcRotateCamera';
-import '@babylonjs/loaders/glTF';
-import {Scene, WebXRSessionManager, WebXRTrackingState} from '@babylonjs/core';
+ import React, { useState, FunctionComponent, useEffect, useCallback } from "react";
+ import { Button, SafeAreaView, StatusBar, View, ViewProps } from "react-native";
+ import { EngineView, useEngine } from "@babylonjs/react-native";
+ import { SceneLoader } from "@babylonjs/core/Loading/sceneLoader";
+ import { Camera } from "@babylonjs/core/Cameras/camera";
+ import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera";
+ import "@babylonjs/loaders/glTF";
+import { Scene } from "@babylonjs/core/scene";
+import { WebXRFeatureName, WebXRSessionManager, WebXRTrackingState, WebXRImageTracking } from "@babylonjs/core/XR";
+import { Mesh } from "@babylonjs/core/Meshes/mesh";
+import { StandardMaterial } from "@babylonjs/core/Materials/standardMaterial";
+import { Color3 } from "@babylonjs/core/Maths";
 
 const EngineScreen: FunctionComponent<ViewProps> = (props: ViewProps) => {
   const engine = useEngine();
