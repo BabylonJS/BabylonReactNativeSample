@@ -57,7 +57,7 @@ const EngineScreen: FunctionComponent<ViewProps> = (props: ViewProps) => {
   useEffect(() => {
     if (engine) {
       const url = "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/BoxAnimated/glTF/BoxAnimated.gltf";
-      SceneLoader.LoadAsync(url, undefined, engine).then(scene => {
+      SceneLoader.LoadAsync(url, undefined, engine).then((scene) => {
         setScene(scene);
         scene.createDefaultCameraOrLight(true, undefined, true);
         (scene.activeCamera as ArcRotateCamera).alpha += Math.PI;
