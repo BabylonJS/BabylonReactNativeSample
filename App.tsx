@@ -13,10 +13,7 @@
  import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera";
  import "@babylonjs/loaders/glTF";
 import { Scene } from "@babylonjs/core/scene";
-import { WebXRFeatureName, WebXRSessionManager, WebXRTrackingState, WebXRImageTracking } from "@babylonjs/core/XR";
-import { Mesh } from "@babylonjs/core/Meshes/mesh";
-import { StandardMaterial } from "@babylonjs/core/Materials/standardMaterial";
-import { Color3 } from "@babylonjs/core/Maths";
+import { WebXRSessionManager, WebXRTrackingState } from "@babylonjs/core/XR";
 
 const EngineScreen: FunctionComponent<ViewProps> = (props: ViewProps) => {
   const engine = useEngine();
