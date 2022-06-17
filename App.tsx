@@ -5,13 +5,13 @@
  * @format
  */
 
- import React, { useState, FunctionComponent, useEffect, useCallback } from "react";
- import { Button, SafeAreaView, StatusBar, View, ViewProps } from "react-native";
- import { EngineView, useEngine } from "@babylonjs/react-native";
- import { SceneLoader } from "@babylonjs/core/Loading/sceneLoader";
- import { Camera } from "@babylonjs/core/Cameras/camera";
- import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera";
- import "@babylonjs/loaders/glTF";
+import React, { useState, FunctionComponent, useEffect, useCallback } from "react";
+import { Button, SafeAreaView, StatusBar, View, ViewProps } from "react-native";
+import { EngineView, useEngine } from "@babylonjs/react-native";
+import { SceneLoader } from "@babylonjs/core/Loading/sceneLoader";
+import { Camera } from "@babylonjs/core/Cameras/camera";
+import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera";
+import "@babylonjs/loaders/glTF";
 import { Scene } from "@babylonjs/core/scene";
 import { WebXRSessionManager, WebXRTrackingState } from "@babylonjs/core/XR";
 
@@ -75,7 +75,7 @@ const EngineScreen: FunctionComponent<ViewProps> = (props: ViewProps) => {
           title={xrSession ? 'Stop XR' : 'Start XR'}
           onPress={onToggleXr}
         />
-        <View style={{flex: 1}}>
+        <View style={{ flex: 1 }}>
           <EngineView camera={camera} displayFrameRate={true} />
         </View>
       </View>
@@ -87,8 +87,8 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
-        <EngineScreen style={{flex: 1}} />
+      <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
+        <EngineScreen style={{ flex: 1 }} />
       </SafeAreaView>
     </>
   );
