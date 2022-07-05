@@ -9,7 +9,7 @@
 using namespace winrt;
 using namespace xaml;
 
-namespace winrt::babylonreactnativesample::implementation
+namespace winrt::BabylonReactNativeSample::implementation
 {
     MainPage::MainPage()
     {

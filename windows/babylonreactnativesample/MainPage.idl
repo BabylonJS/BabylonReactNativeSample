@@ -1,6 +1,6 @@
 #include "NamespaceRedirect.h"
 
-namespace babylonreactnativesample
+namespace BabylonReactNativeSample
 {
     [default_interface]
     runtimeclass MainPage : XAML_NAMESPACE.Controls.Page

@@ -4,7 +4,7 @@
 
 using namespace winrt::Microsoft::ReactNative;
 
-namespace winrt::babylonreactnativesample::implementation
+namespace winrt::BabylonReactNativeSample::implementation
 {
 
 void ReactPackageProvider::CreatePackage(IReactPackageBuilder const &packageBuilder) noexcept
@@ -12,4 +12,4 @@ void ReactPackageProvider::CreatePackage(IReactPackageBuilder const &packageBuil
     AddAttributedModules(packageBuilder);
 }
 
-} // namespace winrt::babylonreactnativesample::implementation
+} // namespace winrt::BabylonReactNativeSample::implementation
