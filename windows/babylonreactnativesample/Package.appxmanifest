@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="abe28caa-9db0-4c24-b0c7-68c37eeba27d"
-    Publisher="CN=ceguille"
+    Name="afc990ad-8859-41e7-9d16-fcfc0fddf077"
+    Publisher="CN=sergioze"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="abe28caa-9db0-4c24-b0c7-68c37eeba27d" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="afc990ad-8859-41e7-9d16-fcfc0fddf077" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>babylonreactnativesample</DisplayName>
-    <PublisherDisplayName>ceguille</PublisherDisplayName>
+    <DisplayName>BabylonReactNativeSample</DisplayName>
+    <PublisherDisplayName>sergioze</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
