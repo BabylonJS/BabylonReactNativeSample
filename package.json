@@ -13,9 +13,10 @@
     "@babylonjs/core": "^5.20.0",
     "@babylonjs/loaders": "^5.20.0",
     "@babylonjs/react-native": "^1.3.2",
-    "@babylonjs/react-native-iosandroid-0-69": "^1.3.2",
+    "@babylonjs/react-native-iosandroid-0-69": "^1.3.5",
     "react": "18.0.0",
-    "react-native": "0.69.4"
+    "react-native": "0.69.4",
+    "react-native-permissions": "^3.6.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
