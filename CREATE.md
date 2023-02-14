@@ -6,78 +6,19 @@ This session describes the steps users can take to manually setup this project f
 
 The following steps will configure your project to use Babylon React Native.
 
-Setup a new react native project (babylon react native currently only supports react version 0.64 and 0.65).
+Setup a new react native project:
 
 ```
-react-native init YOUR_PROJECT_NAME --version 0.65
+react-native init YOUR_PROJECT_NAME --version 0.69
 cd YOUR_PROJECT_NAME
 ```
 
 Install babylon and babylon react native packages:
 
 ```
-npm i @babylonjs/react-native @babylonjs/react-native-iosandroid-0-65 @babylonjs/core
+npm i @babylonjs/react-native @babylonjs/react-native-iosandroid-0-69 @babylonjs/core @babylonjs/loaders
 ```
 
-(Optional) If your application will load 3D files (such as glb), you will also need to install @babylonjs/loaders with the version matching @babylonjs/core:
-
-```
-npm i @babylonjs/loaders
-```
-
-## Cocoapods configuration (iOS Only) 
-
-When building for iOS it will also be required to retrieve the pods for the project. Enter the iOS project folder and retrieve pods.
-
-By default, react native will create a Podfile targeting iOS 10.0 or 11.0, this need to be changed in order for it to work with Babylon react native.
-
-Open the file at ios/Podfile and replace the line:
-
-```
-platform :ios, '10.0'
-```
-
-with:
-
-```
-platform :ios, '12.0'
-```
-
-After that, reinstall pods (in case they were already installed using the old version) by running:
-
-```
-cd ios
-pod deintegrate
-pod update
-cd ..
-```
-
-## Additional Cocoapods configurations (M1 Mac only)
-
-Some additional steps are required if the project is configured on a M1 Mac to run on the iOS Simulator, we must manually exclude arm64 platform to avoid issues with the generated binaries.  
-
-In your ios/Podfile replace:
-
-```
-post_install do |installer|
-    react_native_post_install(installer)
-  end
-```
-
-with:
-
-```
-post_install do |installer|
-    react_native_post_install(installer)
-    installer.pods_project.build_configurations.each do |config|
-      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
-    end
-  end
-```
-
-Open the generated .xcodeproj in XCode and manually exclude arm64 for simulator architecture.
-
-Do ```pod update``` and continue following the instructions for iOS.
 
 ## Configure Typescript
 
@@ -126,6 +67,7 @@ module.exports = {
 Rename your App.js to App.tsx (ATENTION: You should leave the ./index.js entrypoint file as it is otherwise you may run into an issue when it comes to bundling a production build.)
 
 Replace the content of App.tsx by the content in this repo's App.tsx
+
 
 ## Run your project
 
