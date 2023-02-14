@@ -9,7 +9,7 @@ The following steps will configure your project to use Babylon React Native.
 Setup a new react native project:
 
 ```
-react-native init YOUR_PROJECT_NAME --version 0.69
+react-native init YOUR_PROJECT_NAME --version 0.69.0
 cd YOUR_PROJECT_NAME
 ```
 
