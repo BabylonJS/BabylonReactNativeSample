@@ -79,6 +79,14 @@ npm run android
 ```
 
 For IOS project:
+
+```
+cd ios
+pod install
+```
+
+Then, in root folder:
+
 ```
 npm run ios
 ```
