@@ -23,6 +23,8 @@ if (fs.existsSync(cmakePath)) {
   const original = content;
   content = content.replace(/"include\//g, '"Include/');
   content = content.replace(/"source\//g, '"Source/');
+  // Also fix target_include_directories PUBLIC "include" -> "Include"
+  content = content.replace(/PUBLIC "include"\)/g, 'PUBLIC "Include")');
   if (content !== original) {
     fs.writeFileSync(cmakePath, content);
     console.log('Patched Node-API-JSI CMakeLists.txt case-sensitive paths');
