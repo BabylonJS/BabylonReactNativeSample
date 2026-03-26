@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "node scripts/fix-cmake-paths.js"
   },
   "dependencies": {
     "@babylonjs/core": "^9.0.0",
